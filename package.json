@@ -2,7 +2,7 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://Shuruthi-M.github.io/My-Ecommercewebsite.git",
+ "homepage": "https://Shuruthi-M.github.io/My-Website.git",
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
