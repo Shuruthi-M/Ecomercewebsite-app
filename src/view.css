@@ -85,8 +85,8 @@ flex-direction: column;
 }
 #quantity
 {
-  height: 18px;
-  width: 35px;
+  height: 30px;
+  width: 55px;
   text-align: center;
   font-size: 12px;
   padding: 3px;
@@ -96,4 +96,19 @@ flex-direction: column;
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
+}
+.order .buy
+{
+  width: 180px;
+  background-color: SlateBlue;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+
+.order
+{
+  margin-top: 30px;
+  display: flex;
 }

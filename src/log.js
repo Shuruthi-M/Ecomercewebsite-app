@@ -27,20 +27,27 @@ const Login = () => {
         <div className="log">
             <div className="loginpage">
                 <div className="leftside">
-                    <p>Welcome To SparkTrendzon</p>
+                    <h5>Welcome To SparkTrendzon</h5>
                     <form onSubmit={handleLogin}> 
-                        <h2>Login</h2>
-                        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
+                       <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
                         <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
                         <button type="submit">Login</button>
                         <ToastContainer position="bottom-center"
-                            toastStyle={{ width: '400px', height: '100px' }}  />
+                            toastStyle={{ 
+                                width: '400px',
+                               height: '100px',
+                                fontFamily: 'Arial, sans-serif',
+                                fontSize: '14px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center'}} 
+                                closeButton={<button className="toast-close-button">×</button>} />
                     </form>
                     <h5>Get access to your Orders, Wishlist and Recommendations. Signup and enjoy the greatest deals</h5>
                     <div className="link">
                         <span>Don't have an account?</span>
                         <Link to="/signup">
-                            <span>Signup</span>
+                            <span>SignUp</span>
                         </Link>
                     </div>
                 </div>

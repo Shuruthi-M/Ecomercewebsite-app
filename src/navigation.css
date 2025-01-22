@@ -19,14 +19,14 @@ h3
   list-style-type: none;
   display: flex;
   margin-left: 10px;
-  width: 500px;
+  width: 700px;
   margin-top: 10px;
   
 }
 .navbar li
 {
     
-    width: 120px;
+    width: 150px;
    
 }
 .navbar a{
@@ -61,14 +61,15 @@ h3
 {
  display: flex;
  justify-content: center;
-align-items: center;
-margin-left: 80px;
-margin-bottom: 5px;
+ align-items: center;
+ margin-left: 80px;
+
 }
 .profiledata h4
 {
   margin-left: 10px;
   font-size: 20px;
+  margin-top: 9px;
 }
 .category a, .dropbtn {
   display: inline-block;

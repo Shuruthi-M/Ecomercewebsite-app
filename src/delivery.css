@@ -1,0 +1,116 @@
+.main {
+ background-color: skyblue;
+ height: 100vh; 
+ width: 100vw; 
+ overflow: hidden;
+}
+
+.deliverydata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 600px;
+  padding: 40px;
+}
+
+#buttonsub {
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 45px;
+  color: white;
+  background-color: darkblue;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+}
+
+.deldata {
+  width: 300px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.spark h1 {
+  padding-bottom: 10px;
+  color: darkblue;
+  margin-right: 100px;
+  margin-top: 10px;
+  font-style: italic;
+  font-family: Garamond, serif;
+  font-weight: bold;
+}
+
+.spark .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.spark {
+  display: flex;
+  flex-direction: row;
+  margin-left: 700px;
+}
+
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .deliverydata {
+    margin-left: 20px;
+    padding: 20px;
+  }
+
+  .spark {
+    margin-left: 10px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .deliverydata {
+    margin-left: 50px;
+    padding: 30px;
+  }
+
+  .spark {
+    margin-left: 50px;
+  }
+
+  .spark h1 {
+    margin-right: 50px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .deliverydata {
+    margin-left: 100px;
+    padding: 35px;
+  }
+
+  .spark{
+    margin-left: 100px;
+  }
+
+  .spark h1 {
+    margin-right: 75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .deliverydata {
+    margin-left: 200px;
+    padding: 40px;
+  }
+
+  .spark {
+    margin-left: 200px;
+  }
+
+  .spark h1 {
+    margin-right: 100px;
+  }
+}

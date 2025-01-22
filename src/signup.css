@@ -7,10 +7,10 @@
   padding:20px;
 }
  .sign {
-  width:700px;
+  width:900px;
   border: 1px solid;
   border-radius: 10px;
-  height: 500px;
+  height: 650px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -32,23 +32,22 @@
     border-radius: 5px;
     padding: 5px;
     border-bottom: 1px solid black;
-    width: 150px;
+    width: 250px;
 	}
 
-.sign button{
-  width: 150px;
-  padding: 10px;
-  border: none;
-  background-color: darkblue;
-  color: white;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-left: 140px;
-  height: 30px;
-  align-items: center;
-  
-}
+  .submit button {
+    width: 150px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+    margin-left: 280px;
+    margin-bottom: 30px;
+  }
 
 .sign form {
   display: flex;
@@ -62,25 +61,39 @@
   width: 150px;
 }
 
-.column1,.column2
+.column .column1
 {
    display: flex;
    flex-direction: column;
    padding: 10px;
-   gap: 10px;
-   margin-right: 50px;
-}
-.column
-{
-  display: flex;
-  flex-direction: row;
-  margin-left: 20px;
+   gap: 7px;
+   margin-left: 50px;
+   margin-top: 50px;
+   
  
+}
+ .column .column2
+{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   gap: 7px;
+   margin-top: 50px;
+   margin-left: 50px;
+  
+}
+.column{
+display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: 400px;
+
 }
 .path
 { 
 
 text-align: center;
+margin-top:30px;
 }
 span
 {
@@ -91,12 +104,20 @@ span
 {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border: 1px solid white;
-  width: 450px;
-  height: 300px;
-  margin-left: 100px;
+   margin-left: 80px;
+   background-color: white;
+   border: 1px solid white;
+   width: 700px;
+   height: 400px;
+  
 }
+.toast-close-button {
+  font-size: 12px !important;  
+  padding: 4px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
 @media (max-width: 1200px) {
   .sign {
       width: 600px;
@@ -140,7 +161,7 @@ span
   .column {
     display: flex;
   flex-direction: row;
-  margin-left: 0px;
+  height: 500px;
   } 
   .column1, .column2 {
       margin-right: 0;
@@ -153,7 +174,7 @@ span
   background-color: white;
   border: 1px solid white;
   width: 300px;
-  height: 0px;
+ 
   margin-left: 100px;
 }
 }

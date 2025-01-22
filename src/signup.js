@@ -17,9 +17,7 @@ const Signup = () => {
         const password = document.getElementById("password").value.trim();
         const mobileNumber = document.getElementById("mobile").value.trim();
         const birthDate = document.getElementById("birthdate").value.trim();
-        console.log(password);
-
-        if (firstName === "") {
+       if (firstName === "") {
             toast.error("First Name is required!");
             return;
         } 
@@ -50,8 +48,10 @@ const Signup = () => {
 
           localStorage.setItem('email', email);
           localStorage.setItem('password', password);
+          localStorage.setItem('firstName',firstName);
+          localStorage.setItem('lastName',lastName);
 
-        toast.success("Form submitted successfully");
+          toast.success("Form submitted successfully");
     }
 
     return (
@@ -81,13 +81,21 @@ const Signup = () => {
                         <div className="submit">
                             <button type="submit" onClick={handleClick}>Submit</button>
                             <ToastContainer position="bottom-center"
-                            toastStyle={{ width: '400px', height: '100px' }}  />
+                            toastStyle={{ 
+                                width: '400px',
+                               height: '100px',
+                                fontFamily: 'Arial, sans-serif',
+                                fontSize: '14px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center'}} 
+                                closeButton={<button className="toast-close-button">×</button>} />
                         </div>
                     </div>
                 </form>
                
                 <div className="path">
-                    <span>Don't have an account ?</span>
+                    <span>Do you  have an account ?</span>
                     <Link to="/log">
                         <span>Login</span>
                     </Link>

@@ -4,12 +4,14 @@ import "./view.css";
 import StarRating from './starrating';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import Navigation from './navigation';
+import { useNavigate } from 'react-router-dom';
 const View = () => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [color,setColor] = useState("");
+  const [color,setColor] = useState("darkgrey");
+  const navigate=useNavigate();
   useEffect(() => {
     setLoading(true);
     fetch(`https://fakestoreapi.com/products/${id}`)
@@ -35,6 +37,11 @@ const View = () => {
   if (!post) {
     return <div>No product data found.</div>;
   }
+  const handleBuyClick=()=>
+  {
+     navigate('/delivery');
+  }
+  
 
   return (
     <div className='expview'>
@@ -51,18 +58,18 @@ const View = () => {
        </div>
       <div className='secondview'>
       <h6>{post.title}</h6>
+       <p>{post.description}</p>
        <p>{post.category}</p>
-        <p>{post.description}</p>
       <p>₹{post.price}</p>
       <p>Quantity: <input id='quantity' type='number' placeholder='1' ></input></p>
       <div className='rate'>
        <p>{post.rating.rate}</p>
       <StarRating rating={post.rating.rate} />
       </div>
-      <FavoriteRoundedIcon
-        style= {{color:color}} 
-        onClick={()=>setColor("red")}
-        />
+      <FavoriteRoundedIcon style= {{color:color}} onClick={()=>setColor("red")}/>
+      <div className='order'>
+    <button className='buy' onClick={handleBuyClick}>Buy now</button>
+        </div>
       </div>
     </div>
     </div>

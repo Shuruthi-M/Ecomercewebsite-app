@@ -6,7 +6,6 @@ import StarRating from './starrating';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import ImageSlider from './imageSlider';
 import Navigation from './navigation';
-
 const Home = () => {
   const [posts, setPosts] = useState([]);
   const [records, setRecords] = useState([]);
@@ -15,7 +14,7 @@ const Home = () => {
   const [electrocolor, setElectroColor] = useState("");
   const [menclothcolor, setMenclothColor] = useState("");
   const [womenclothcolor, setWomenclothColor] = useState("");
-
+  const[all,setAll]=useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -36,17 +35,24 @@ const Home = () => {
   };
 
   const filter = (event) => {
-    setRecords(posts.filter(f => f.category.toLowerCase().includes(event.target.value.toLowerCase())));
+    setRecords(posts.filter(f => f.title.toLowerCase().includes(event.target.value.toLowerCase())));
   };
 
   const handleCategoryClick = (setCurrentColor, currentColor, category) => {
-    setJeweleryColor("");
+   setJeweleryColor("");
     setElectroColor("");
     setMenclothColor("");
     setWomenclothColor("");
     setCurrentColor(currentColor === "skyblue" ? "" : "skyblue");
     setSelectedCategory(category);
     setRecords(posts.filter(post => post.category === category ? post : ""));
+  };
+  const handleAllClick=(setCurrentColor,currentColor)=>
+  {
+    setAll("data");
+    setCurrentColor(currentColor === "skyblue" ? "" : "skyblue");
+    setSelectedCategory('all');
+    setRecords(posts);
   };
 
   return (
@@ -55,7 +61,7 @@ const Home = () => {
         <img src="/applogo.png" className='img' alt="Logo" /> 
         <h1>SparkTrendzon</h1>
         <div className='searchicon'>
-          <input type='text' placeholder='Search' onChange={filter} />
+          <input type='text' placeholder='Search' onChange={filter} style={{ color: 'black' }} />
           <SearchOutlinedIcon />
         </div>
        
@@ -68,20 +74,23 @@ const Home = () => {
           <button type="button" className='collection' style={{ backgroundColor: electrocolor }} onClick={() => handleCategoryClick(setElectroColor, electrocolor, 'electronics')}>Electronics</button>
           <button type="button" className='collection' style={{ backgroundColor: menclothcolor }} onClick={() => handleCategoryClick(setMenclothColor, menclothcolor, "men's clothing")}>Men's clothing</button>
           <button type="button" className='collection' style={{ backgroundColor: womenclothcolor }} onClick={() => handleCategoryClick(setWomenclothColor, womenclothcolor, "women's clothing")}>Women's clothing</button>
-        </div>
+          <button type="button" className='collection' style={{backgroundColor:all}} onClick={()=>handleAllClick(setAll, all)}>All</button>
+          </div>
       </div>
       {records.length > 0 ? (
         dataArray(records, 5).map((set, index) => (
           <ul className='detail' key={index}>
             {set.map(post => (
-              <li className='data' key={post.id} onClick={() => navigate(`/detail/${post.id}`)}>
+              <li className='data' key={post.id} onClick={() => navigate(`/view/${post.id}`)}>
                 <div className='container'>
                   <img src={post.image} className="image-style" alt={post.title} />
-                  <p>₹{post.price}</p>
-                  <span>{post.category}</span>
-                  <h5>{post.title}</h5>
-                  <p>{post.rating.rate}</p>
+                   <h5>{post.title}</h5>
+                   <h6>{post.category}</h6>
+                  <h2>₹{post.price}</h2>
+                  <div className='rating'>
+                  <p>{post.rating.rate} </p>
                   <StarRating rating={post.rating.rate} />
+                 </div>
                 </div>
               </li>
             ))}

@@ -1,0 +1,77 @@
+.update
+{
+  height: 100vh;
+  background-color: skyblue;
+  align-items: center;
+  justify-content: center;
+
+}
+.up
+{
+  display: flex;
+  margin-top: 150px;
+}
+.off
+{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 100px;
+    background-color: white;
+}
+.off h3
+{
+ font-size: 30px;
+ font-style: italic;
+}
+.off p
+{
+  margin-left: 80px;
+  background-color: darkblue;
+  width: 130px;
+ border-radius: 3px;
+  padding: 10px;
+  color: white;
+  
+}
+.imge
+{
+  height: 150px;
+  width: 150px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+.offnews
+{
+  font-size: 30px;
+  font-style: italic;
+  color: darkblue;
+  text-align: center;
+  margin-top: 40px;
+}
+.logos h1
+
+{
+  padding-bottom: 10px;
+  color:darkblue;
+  margin-right: 100px;
+  margin-top: 10px;
+  font-style: italic;
+  font-family: Garamond, serif;
+  font-weight: bold;
+  
+}
+.logos .img {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+  padding: 5px;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  margin-left: 650px;
+}
