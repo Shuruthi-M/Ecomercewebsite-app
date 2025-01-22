@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+    <Routes>
       <Route path="/" element={<Login />} />
         <Route path="/log" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
