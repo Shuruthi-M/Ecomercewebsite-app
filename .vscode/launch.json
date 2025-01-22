@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch Chrome against localhost",
+        "type": "pwa-chrome",  // Use "pwa-edge" for Edge browser
+        "request": "launch",
+        "url": "http://localhost:3000",  // Your React app's URL
+        "webRoot": "${workspaceFolder}/src",
+        "skipFiles": ["<node_internals>/**"]
+      }
+    ]
+  }
+  
