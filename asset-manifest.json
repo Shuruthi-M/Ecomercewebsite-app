@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/My-eCommercewebsite/static/css/main.a3242cfc.css",
-    "main.js": "/My-eCommercewebsite/static/js/main.cb1831a9.js",
-    "static/media/slide4.jpg": "/My-eCommercewebsite/static/media/slide4.1c9849dcfc0c30ff488e.jpg",
-    "static/media/slide3.jpg": "/My-eCommercewebsite/static/media/slide3.a1759bc1ef1178554e66.jpg",
-    "static/media/slide5.jpg": "/My-eCommercewebsite/static/media/slide5.4bdabb5e99d482fe652d.jpg",
-    "static/media/slide2.jpg": "/My-eCommercewebsite/static/media/slide2.b08fb960ec4d0601dd2b.jpg",
-    "static/media/right.png": "/My-eCommercewebsite/static/media/right.df427d194dc8bd154b1b.png",
-    "static/media/fa-solid-900.ttf": "/My-eCommercewebsite/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
-    "static/media/fa-brands-400.ttf": "/My-eCommercewebsite/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
-    "static/media/fa-solid-900.woff2": "/My-eCommercewebsite/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
-    "static/media/fa-brands-400.woff2": "/My-eCommercewebsite/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
-    "static/media/fa-regular-400.ttf": "/My-eCommercewebsite/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
-    "static/media/fa-regular-400.woff2": "/My-eCommercewebsite/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
-    "static/media/slide1.jpg": "/My-eCommercewebsite/static/media/slide1.53556e105293d50addcb.jpg",
-    "static/media/fa-v4compatibility.ttf": "/My-eCommercewebsite/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
-    "static/media/fa-v4compatibility.woff2": "/My-eCommercewebsite/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
-    "index.html": "/My-eCommercewebsite/index.html",
-    "main.a3242cfc.css.map": "/My-eCommercewebsite/static/css/main.a3242cfc.css.map",
-    "main.cb1831a9.js.map": "/My-eCommercewebsite/static/js/main.cb1831a9.js.map"
+    "main.css": "/Ecomercewebsite-app/static/css/main.02765e67.css",
+    "main.js": "/Ecomercewebsite-app/static/js/main.a2b41973.js",
+    "static/media/slide4.jpg": "/Ecomercewebsite-app/static/media/slide4.1c9849dcfc0c30ff488e.jpg",
+    "static/media/slide3.jpg": "/Ecomercewebsite-app/static/media/slide3.a1759bc1ef1178554e66.jpg",
+    "static/media/slide5.jpg": "/Ecomercewebsite-app/static/media/slide5.4bdabb5e99d482fe652d.jpg",
+    "static/media/slide2.jpg": "/Ecomercewebsite-app/static/media/slide2.b08fb960ec4d0601dd2b.jpg",
+    "static/media/right.png": "/Ecomercewebsite-app/static/media/right.df427d194dc8bd154b1b.png",
+    "static/media/fa-solid-900.ttf": "/Ecomercewebsite-app/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/fa-brands-400.ttf": "/Ecomercewebsite-app/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/fa-solid-900.woff2": "/Ecomercewebsite-app/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/fa-brands-400.woff2": "/Ecomercewebsite-app/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/fa-regular-400.ttf": "/Ecomercewebsite-app/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/fa-regular-400.woff2": "/Ecomercewebsite-app/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/slide1.jpg": "/Ecomercewebsite-app/static/media/slide1.53556e105293d50addcb.jpg",
+    "static/media/fa-v4compatibility.ttf": "/Ecomercewebsite-app/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Ecomercewebsite-app/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
+    "index.html": "/Ecomercewebsite-app/index.html",
+    "main.02765e67.css.map": "/Ecomercewebsite-app/static/css/main.02765e67.css.map",
+    "main.a2b41973.js.map": "/Ecomercewebsite-app/static/js/main.a2b41973.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3242cfc.css",
-    "static/js/main.cb1831a9.js"
+    "static/css/main.02765e67.css",
+    "static/js/main.a2b41973.js"
   ]
 }
